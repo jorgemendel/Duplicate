@@ -1,0 +1,7 @@
+duplicate_file.py is a Python 3 script that copies a file into the directory where it is called from. Example:
+
+duplicate_file.py /home/landscape.jpg
+
+
+The previous command will copy landscape.jpg into the current working directory and name ot landscape-copy.jpg. It can be imported
+as a module and copy a file by calling the copy function with the file path as the argument.
