@@ -18,9 +18,13 @@ def get_name_and_extension(s):
     """Returns the name and extension of a filename as a tuple. It takes a string with a path to a file."""
     f_name_ext = get_name_ext_of_file(s)
     pieces = f_name_ext.split('.')
+    if len(pieces) == 1:  # No extension
+        fname = pieces[0]
+        extension = ''
+        return fname, extension
     extension = pieces[len(pieces)-1]
-    if len(pieces) > 2:
-        fname = '.'.join(pieces[:len(pieces)])
+    if len(pieces) > 2:  # Dot in the middle of filename
+        fname = '.'.join(pieces[:len(pieces)-1])
     else:
         fname = pieces[0]
     return fname, extension
