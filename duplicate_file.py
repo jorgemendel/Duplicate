@@ -56,6 +56,9 @@ def copy(file_path):
             print('Completed successfully!')
             break
 
+    infile.close()
+    outfile.close()
+
 
 def main():
     check_arguments(num_arg)
