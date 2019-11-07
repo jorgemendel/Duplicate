@@ -4,6 +4,6 @@ python3 duplicate_file.py /home/landscape.jpg
 
 
 The previous command will copy landscape.jpg into the current working directory and name it landscape-copy.jpg. It can be imported
-as a module and copy a file by calling the copy function with the file path as the argument.
+as a module, in order to copy a file, by calling the copy function with the file path as the argument.
 
 This was a good practice to work with file paths.
